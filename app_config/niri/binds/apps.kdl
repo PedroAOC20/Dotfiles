@@ -1,0 +1,10 @@
+binds {
+    Mod+B hotkey-overlay-title="Zen Browser" { spawn "zen-browser"; }
+    Mod+O hotkey-overlay-title="Obsidian" { spawn "obsidian"; }
+
+    Mod+T hotkey-overlay-title="Todoist" { spawn "zen-browser" "https://app.todoist.com/app/today#"; }
+    Mod+M hotkey-overlay-title="Spotify" { spawn "zen-browser" "https://open.spotify.com"; }
+    Mod+C hotkey-overlay-title="WhatsApp" { spawn "zen-browser" "https://web.whatsapp.com/"; }
+    Mod+Y hotkey-overlay-title="YouTube" { spawn "zen-browser" "https://www.youtube.com/"; }
+    Mod+D hotkey-overlay-title="Drive" { spawn "zen-browser" "https://drive.google.com/drive/u/0/my-drive"; }
+}

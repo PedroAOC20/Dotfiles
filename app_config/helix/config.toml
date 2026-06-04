@@ -1,0 +1,57 @@
+theme = "noctalia"
+
+[editor]
+mouse = true
+line-number = "relative"
+bufferline = "multiple"
+color-modes = true
+cursorline = true
+true-color = true
+auto-format = true
+auto-completion = true
+path-completion = true
+auto-info = true
+undercurl = true
+auto-pairs = true
+idle-timeout = 200
+clipboard-provider = "wayland"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name"]
+center = ["version-control"]
+right = ["diagnostics","selections", "position", "file-encoding", "file-type"]
+separator = "│"
+mode.normal = "Nor"
+mode.insert = "Ins"
+mode.select = "Vis"
+diagnostics = ["warning", "error"]
+workspace-diagnostics = ["warning", "error"]
+
+[editor.lsp]
+enable = true
+display-color-swatches = true
+display-messages = true
+display-inlay-hints = true
+snippets = true
+auto-signature-help = true
+
+[editor.file-picker]
+hidden = true
+parents = true
+ignore = true
+git-ignore = true
+
+[editor.whitespace.render]
+space = "none"
+tab = "all"
+newline = "none"
+
+[editor.indent-guides]
+render = true
+character = "|"
+

@@ -1,0 +1,27 @@
+// ===========================================
+// NIRI HOME
+// ===========================================
+
+spawn-at-startup "qs" "-c" "noctalia-shell"
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
+// ==================== MÓDULOS ====================
+include "modules/inputs.kdl"
+include "modules/outputs.kdl"
+include "modules/layout.kdl"
+include "modules/animations.kdl"
+include "modules/windows-rules.kdl"
+
+// ==================== BINDS ====================
+include "binds/core.kdl"
+include "binds/apps.kdl"
+include "binds/navigation.kdl"
+include "binds/media.kdl"
+
+hotkey-overlay {
+    // skip-at-startup
+}
+
+debug {
+    honor-xdg-activation-with-invalid-serial
+}
