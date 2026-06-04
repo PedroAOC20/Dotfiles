@@ -12,4 +12,5 @@ set --erase fish_greeting
 # ===============
 starship init fish | source
 
-alias spf superfile
+set -gx EDITOR helix
+set -gx VISUAL helix
