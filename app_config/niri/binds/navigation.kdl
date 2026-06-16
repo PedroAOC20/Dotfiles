@@ -9,8 +9,14 @@ binds {
     Mod+Shift+C { center-column; }
     Mod+Ctrl+C { center-visible-columns; }
 
-    Mod+V       { toggle-window-floating; }
-    Mod+Shift+V { switch-focus-between-floating-and-tiling; }
+    Mod+Shift+F { toggle-window-floating; }
+    Mod+Ctrl+F  { switch-focus-between-floating-and-tiling; }
+
+    // Scroll
+    Mod+WheelScrollDown cooldown-ms=150 { focus-workspace-down; }
+    Mod+WheelScrollUp   cooldown-ms=150 { focus-workspace-up; }
+    Mod+WheelScrollRight { focus-column-right; }
+    Mod+WheelScrollLeft  { focus-column-left; }
 
     // Workspaces
     Mod+1 { focus-workspace 1; }
@@ -40,11 +46,21 @@ binds {
     Mod+Ctrl+J { move-window-down; }
     Mod+Ctrl+K { move-window-up; }
 
+    // Monitores (Alt = nível de monitor)
+    Mod+Alt+H      { focus-monitor-left; }
+    Mod+Alt+L      { focus-monitor-right; }
+    Mod+Alt+Ctrl+H { move-column-to-monitor-left; }
+    Mod+Alt+Ctrl+L { move-column-to-monitor-right; }
+
     Mod+BracketLeft  { consume-or-expel-window-left; }
     Mod+BracketRight { consume-or-expel-window-right; }
 
     Mod+Comma  { consume-window-into-column; }
     Mod+Period { expel-window-from-column; }
+
+    // Tabs
+    Ctrl+Tab       repeat=false { focus-window-down; }
+    Ctrl+Shift+Tab repeat=false { focus-window-up; }
 
     Mod+Minus { set-column-width "-10%"; }
     Mod+Equal { set-column-width "+10%"; }
